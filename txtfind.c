@@ -42,7 +42,7 @@ int is_substring(char *str1, char *str2) {
     return cpFoundString != NULL ? 1 : 0;
 }
 
-/// Checks if word str2 in str1.
+/// Checks if word str2 in str1. Modifies str1.
 /// \param str1 First string.
 /// \param str2 Second String.
 /// \return 1 if true else 0.
@@ -140,7 +140,7 @@ int main() {
     char targetOperation = '\0';
     init_array((char *) lines, NUM_LINES, LEN_LINE, '\0');
 
-    // Get word and operation
+    // Get word and operation, assuming ok input.
     scanf("%29s %c\n\n", targetWord, &targetOperation);
 
     // Read text lines

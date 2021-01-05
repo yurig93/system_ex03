@@ -13,6 +13,8 @@
 #define OP_PRINT_SIMILAR_WORDS 'b'
 
 
+// There are two function here one check if a string is a substring and the second checks if a word is a substring.
+
 int is_substring(char *str1, char *str2);
 
 int is_substring_by_word(char *str1, char *str2);
