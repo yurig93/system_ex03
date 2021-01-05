@@ -7,9 +7,9 @@
 #include "stdio.h"
 
 void print_arr(int *arr, int len) {
-    for (int i = 0; i < len-1; i++)
+    for (int i = 0; i < len - 1; i++)
         printf("%d,", arr[i]);
-    printf("%d", arr[len-1]);
+    printf("%d", arr[len - 1]);
 }
 
 void shift_element(int *arr, int i) {
@@ -29,7 +29,6 @@ void insertion_sort(int *arr, int len) {
             int *beforeItem = currentItem - j;
             if (*beforeItem > *currentItem) {
                 newPos = beforeItem;
-//                printf("Switching %d with %d\n", *beforeItem, *currentItem);
             }
         }
 
@@ -46,17 +45,15 @@ int main() {
     int myArr[ARR_SIZE];
     int readCount = 0;
 
-    while(readCount < ARR_SIZE){
+    while (readCount < ARR_SIZE) {
         int lastRead = scanf("%d", &myArr[readCount]);
-
-        if(lastRead == 0 || lastRead == EOF){
+        if (lastRead == 0 || lastRead == EOF) {
             break;
         }
-
         readCount++;
     }
 
-    if(readCount != ARR_SIZE){
+    if (readCount != ARR_SIZE) {
         printf("Wrong input given... Exiting.");
         exit(1);
     }
