@@ -98,7 +98,7 @@ void print_lines(char *cpLines, int iNumLines, int iLenLine, char *targetStr) {
         unsigned long iScannedLineLen = strlen(scannedLine) + 1;
         char tmp[iScannedLineLen];
         strncpy(tmp, scannedLine, iScannedLineLen);
-        if (is_substring_by_word(tmp, targetStr) > 0) {
+        if (is_substring(tmp, targetStr) > 0) {
             printf("%s", scannedLine);
         }
     }
