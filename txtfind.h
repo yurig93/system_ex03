@@ -15,10 +15,12 @@
 
 int is_substring(char *str1, char *str2);
 
-int is_similar(char *s, char *t, int n);
+int is_substring_by_word(char *str1, char *str2);
 
-void print_lines(char *dpLines, int iNumLines, int iLineLen, char *targetStr);
+int is_similar(char *s, char *t, int iAllowedPenalty);
 
-void print_similar_words(char *dpLines, int iNumLines, int iLineLen, char *targetStr, int iAllowedPenalty);
+void print_lines(char *cpLines, int iNumLines, int iLineLen, char *targetStr);
+
+void print_similar_words(char *cpLines, int iNumLines, int iLineLen, char *targetStr, int iAllowedPenalty);
 
 #endif //SYSTEM_EX03_TXTFIND_H
